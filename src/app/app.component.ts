@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bm works!';
+  title = 'Bookmonkey';
+  myTitleForBox = 'second title';
+
+  handleTitleClick(e:string) {
+    this.title = e;
+    console.log(e);
+  }
 }

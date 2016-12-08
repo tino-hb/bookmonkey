@@ -1,0 +1,6 @@
+.mouse-cursor .field {
+	height: 400px;
+	width: 600px;
+	border: 2px solid #808080;
+	border-radius: 3px;
+}

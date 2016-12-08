@@ -1,0 +1,8 @@
+<h3>Bücherliste</h3>
+<div *ngFor="let book of books" class="col-lg-4 book-item">
+  <h4>{{book.title}}</h4>
+  <h6>{{book.subtitle}}</h6>
+  <p>{{book.abstract}}</p>
+	<p>Publisher: <a [href]="book.publisher.url">{{book.publisher.name}}</a></p>
+	<hr>
+</div>

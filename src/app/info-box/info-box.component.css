@@ -1,0 +1,25 @@
+.info-wrapper {
+	height: 40px;
+}
+
+.info-wrapper p {
+	transition: all 300ms ease;
+	height: 100%;
+}
+
+.info-wrapper p.hide {
+	height: 0;
+}
+
+button {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid #008000;
+	border-radius: 50px;
+	background: transparent;
+	text-decoration: none;
+}
+
+button:focus {
+	outline: none;
+}

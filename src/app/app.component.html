@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+	<div class="row">
+		<h1>
+		  {{title}}
+		</h1>
+	</div>
+	<div class="row">
+		<bm-book-list></bm-book-list>
+	</div>
+	<div class="row">
+		<bm-title-box (titleClicked)="handleTitleClick($event)" [title]="myTitleForBox"></bm-title-box>
+	</div>
+	<bm-info-box></bm-info-box>
+	<bm-mouse-cursor></bm-mouse-cursor>
+</div>
