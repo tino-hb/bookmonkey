@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import { BookDataService } from '../shared';
+import { BookDataService, Book } from '../shared';
 import 'rxjs/add/operator/switchMap';  // handle more than one observables
 
 @Component({
@@ -10,7 +10,7 @@ import 'rxjs/add/operator/switchMap';  // handle more than one observables
 })
 export class BookDetailComponent implements OnInit {
 
-  private book;
+  private book:Book;
 
   constructor(
       private route: ActivatedRoute,
