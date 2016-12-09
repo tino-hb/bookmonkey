@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import { BookDataService, Book } from '../shared';
+import { BookDataService } from '../shared/book-data.service';
 import 'rxjs/add/operator/switchMap';  // handle more than one observables
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/distinctUntilChanged';

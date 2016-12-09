@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BookDataService } from '../shared';
+import { BookDataService } from '../shared/book-data.service';
 
 @Component({
   selector: 'bm-book-list',

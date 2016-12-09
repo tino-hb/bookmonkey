@@ -6,34 +6,22 @@ import { HttpModule } from '@angular/http';
 // Routing
 import { routing } from './app.routing'
 
+// Sub-Modules
+import { BookModule } from './book/book.module'
+
 // Components
 import { AppComponent } from './app.component';
-import { InfoBoxComponent } from './info-box/info-box.component';
-import { MouseCursorComponent } from './mouse-cursor/mouse-cursor.component';
-import { TitleBoxComponent } from './title-box/title-box.component';
-import { BookListComponent } from './book-list/book-list.component';
-
-// Services
-import {BookDataService} from "./shared/book-data.service";
-import { BookDetailComponent } from './book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    InfoBoxComponent,
-    MouseCursorComponent,
-    TitleBoxComponent,
-    BookListComponent,
-    BookDetailComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
-  ],
-  providers: [
-    BookDataService
+    routing,
+    BookModule
   ],
   bootstrap: [AppComponent]
 })
