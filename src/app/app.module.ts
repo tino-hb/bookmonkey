@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// Routing
+import { routing } from './app.routing'
+
 // Components
 import { AppComponent } from './app.component';
 import { InfoBoxComponent } from './info-box/info-box.component';
@@ -12,6 +15,7 @@ import { BookListComponent } from './book-list/book-list.component';
 
 // Services
 import {BookDataService} from "./shared/book-data.service";
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,14 @@ import {BookDataService} from "./shared/book-data.service";
     InfoBoxComponent,
     MouseCursorComponent,
     TitleBoxComponent,
-    BookListComponent
+    BookListComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [
     BookDataService

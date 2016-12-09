@@ -5,11 +5,7 @@
 		</h1>
 	</div>
 	<div class="row">
-		<bm-book-list></bm-book-list>
+		<router-outlet></router-outlet>
 	</div>
-	<div class="row">
-		<bm-title-box (titleClicked)="handleTitleClick($event)" [title]="myTitleForBox"></bm-title-box>
-	</div>
-	<bm-info-box></bm-info-box>
-	<bm-mouse-cursor></bm-mouse-cursor>
 </div>
+<div class="panel-footer">Panel footer</div>
