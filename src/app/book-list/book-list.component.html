@@ -4,5 +4,6 @@
   <h6>{{book.subtitle}}</h6>
   <p>{{book.abstract}}</p>
 	<p>Publisher: <a [href]="book.publisher.url">{{book.publisher.name}}</a></p>
+	<p><a class="label label-info" [routerLink]="['/books', book.isbn]">weitere Details</a></p>
 	<hr>
 </div>

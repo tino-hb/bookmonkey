@@ -1,0 +1,10 @@
+<p><a class="label label-info" routerLink="/books">zurück zur Liste</a></p>
+
+<div *ngIf="book" class="col-lg-6 col-lg-offset-3 book-item">
+  <h3>{{book.title}}</h3>
+  <h6>{{book.subtitle}}</h6>
+  <p>Written by {{book.author}}</p>
+  <p>{{book.abstract}}</p>
+  <p>Publisher: <a [href]="book.publisher.url">{{book.publisher.name}}</a>
+    <small class="pull-right">{{book.numPages}} pages</small></p>
+</div>
